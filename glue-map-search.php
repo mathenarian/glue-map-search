@@ -15,6 +15,7 @@ Domain Path:   /lang/
 /* To avoid name collisions it is advisable to create a php class when creating a wordpress plugin
 The next code checks that no "glm_search" class has been defined elsewhere. If glm_search is unused,
 it defines and initializes the class */
+//test
 
 if (!class_esists("glm_search")){1
 	class glm_search {
