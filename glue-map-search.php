@@ -17,9 +17,16 @@ The next code checks that no "glm_search" class has been defined elsewhere. If g
 it defines and initializes the class */
 //test
 
-if (!class_esists("glm_search")){1
+if (!class_esists("glm_search")){
 	class glm_search {
 		function glm_search(){
+		}
+		function glm_insert_map_shortcode(){
+			return "foo and bar";
+		}
+
+		function glm_insert_map_register_shortcode(){
+			add_shortcode( 'glue-map', 'glm_insert_map_shortcode' );
 		}
 	}
 }
@@ -30,8 +37,16 @@ if (class_exists("glm_search")){
 
 if(isset($glm_search_class_active)){
 //Actions
+add_action('init', glm_insert_map_register_shortcode);
 //Filters
 }
 
+
+
+}
+
+
+
+*/
 ?>
 
