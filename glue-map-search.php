@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: Glue Map Search. Glue a search option to Google Maps for Wordpress
+Plugin Name: Glue Map Search for Wordpress
 Plugin URI: http://hencb.nfshost.com/
-Description: Your plugin didn't include a search option for a map? Fixed. Moves the map focus to the target location and displays a marker. 
+Description: A plugin based on the Store locator JavaScript API for Google Maps 
 Version: 0.0.1
 Author: Bruno Henc
 Author URI: http://hencb.nfshost.com
